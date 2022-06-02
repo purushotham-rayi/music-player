@@ -1,16 +1,92 @@
-html {
-  background-color: black;
+body {
+  margin: 0%;
 }
+
+/* nav menu */
+nav {
+  background-color: #0c1027;
+  margin: auto;
+  width: 100vw;
+  position: fixed;
+}
+/* centred nav elements in desktop view */
+nav li {
+  margin: auto;
+}
+
+/* dropdown rules */
+
+.bars {
+  color: white;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+.dropdown-menu {
+  display: none;
+}
+.dropdown-list {
+  display: none;
+  background-color: #0c1027;
+  position: relative;
+  width: auto;
+  margin-left: 80vw;
+  text-align: left;
+}
+.dropdown-only {
+  padding: 5px;
+  margin-top: 5px;
+}
+/* hover */
+.dropdown-menu:hover .dropdown-list {
+  display: block;
+}
+
+/* normal nav items */
+
+.horizontal-list {
+  margin: 0%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* home icon */
+.horizontal-list img {
+  height: 2rem;
+  width: 4rem;
+}
+
+/* account icon */
+.account img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+/* common nav rules */
+.text-right {
+  text-align: right;
+}
+.no-list-style {
+  list-style: none;
+}
+
+.no-list-style a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------------------------------- */
 
 /* music player controls at bottom */
 .music-player-options {
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   bottom: 0;
   background-color: antiquewhite;
   position: fixed;
   margin: 0%;
+  left: 0%;
 }
 
 .song-info {
@@ -22,4 +98,21 @@ html {
   padding: 0px 80px;
   display: flex;
   justify-content: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  .dropdown-menu {
+    display: block;
+  }
+  .horizontal-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .horizontal-list {
+    /* display: none; */
+  }
 }
