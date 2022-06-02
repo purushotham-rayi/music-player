@@ -1,7 +1,7 @@
 body {
   margin: 0%;
 }
-
+/* ------------------------------------------------------------------- */
 /* nav menu */
 nav {
   background-color: #0c1027;
@@ -49,13 +49,37 @@ nav li {
   justify-content: space-between;
 }
 
+/* --------------------------------------------------------------------- */
+
 /* home icon */
 .horizontal-list img {
   height: 2rem;
   width: 4rem;
 }
 
+/* notification properties */
+.notification {
+  margin-right: -5%;
+  margin-left: 15%;
+}
+.notification-container {
+  height: auto;
+  width: auto;
+}
+.notification-dot {
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  margin-left: -1%;
+}
+
 /* account icon */
+.account {
+  margin-right: 2%;
+}
+
 .account img {
   height: 2rem;
   width: 2rem;
@@ -75,7 +99,7 @@ nav li {
   color: white;
 }
 
-/* ------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 
 /* music player controls at bottom */
 .music-player-options {
