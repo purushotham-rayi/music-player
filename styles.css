@@ -57,10 +57,42 @@ nav li {
   width: 4rem;
 }
 
+/* search properties */
+.search {
+  margin-right: -5vw;
+  margin-left: 40vw;
+}
+.search-bar input[type="text"] {
+  width: 15rem;
+  height: 1.5rem;
+  padding: 0%;
+  border-radius: 5px;
+  background-color: #202d73;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar i {
+  color: lightgrey;
+}
+.search-icon {
+  position: absolute;
+  top: 0.4rem;
+  left: 10px;
+}
+.mic-icon {
+  position: absolute;
+  top: 0.4rem;
+  right: 10px;
+}
+input[type="text"]::placeholder {
+  padding-left: 1.5rem;
+  color: lightgrey;
+}
 /* notification properties */
 .notification {
-  margin-right: -5%;
-  margin-left: 15%;
+  margin-right: 0vw;
+  margin-left: 15vw;
 }
 .notification-container {
   height: auto;
@@ -72,12 +104,13 @@ nav li {
   border-radius: 50%;
   background-color: red;
   position: absolute;
-  margin-left: -1%;
+  margin-left: -1vw;
 }
 
 /* account icon */
 .account {
-  margin-right: 2%;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .account img {
