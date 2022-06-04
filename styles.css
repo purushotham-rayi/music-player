@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  background-color: #0c1027;
 }
 /* ------------------------------------------------------------------- */
 /* nav menu */
@@ -52,10 +53,16 @@ nav li {
 /* --------------------------------------------------------------------- */
 
 /* home icon */
+.home {
+  margin-right: 2vw;
+  margin-left: 3vw;
+}
 .horizontal-list img {
   height: 2rem;
   width: 4rem;
 }
+
+/* favourites properties */
 
 /* search properties */
 .search {
@@ -78,15 +85,15 @@ nav li {
 .search-icon {
   position: absolute;
   top: 0.4rem;
-  left: 10px;
+  left: 1%;
 }
 .mic-icon {
   position: absolute;
   top: 0.4rem;
-  right: 10px;
+  right: 1%;
 }
 input[type="text"]::placeholder {
-  padding-left: 1.5rem;
+  padding-left: 1.5vw;
   color: lightgrey;
 }
 /* notification properties */
@@ -97,6 +104,7 @@ input[type="text"]::placeholder {
 .notification-container {
   height: auto;
   width: auto;
+  position: relative;
 }
 .notification-dot {
   height: 0.5em;
@@ -104,7 +112,7 @@ input[type="text"]::placeholder {
   border-radius: 50%;
   background-color: red;
   position: absolute;
-  margin-left: -1vw;
+  margin-left: -10px;
 }
 
 /* account icon */
@@ -132,6 +140,127 @@ input[type="text"]::placeholder {
   color: white;
 }
 
+/* ----------------------------------------------------------------------- */
+
+/* main container */
+main {
+  padding-top: 4.25rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  background-color: blanchedalmond;
+  margin: 0% 5% 0% 5%;
+
+  /* height: 75vw; */
+  height: auto;
+  width: 90%;
+}
+
+/* queue properties */
+
+.queue-header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.queue-header h1 {
+  width: 50%;
+  color: white;
+}
+.queue-header select {
+  width: 50%;
+}
+
+/* queue items */
+
+.queue-items li {
+  list-style: none;
+}
+
+/* different playlists on homepage are displayed here. */
+
+.song-list-container {
+  height: inherit;
+  width: 75vw;
+  background-color: aquamarine;
+}
+/* queue */
+.queue-container {
+  height: inherit;
+  width: 25vw;
+  background-color: #0c1027;
+}
+/* ordered list rules */
+ol {
+  width: 30vw;
+  list-style: none;
+  min-width: 16rem;
+  max-width: 16rem;
+}
+ol li {
+  height: 4rem;
+
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: #0c1027;
+}
+
+li span {
+  display: inline-block;
+}
+
+/* queue song count rules */
+.queue-song-count {
+  padding: 0 5%; /* 15% */
+}
+.queue-song-count span {
+  color: lightgray;
+  padding: 150% 0;
+}
+
+/* image rules */
+.queue-song-image-container {
+  padding: 0% 5%; /* 45% */
+}
+
+img.queue-song-banner {
+  height: 3rem;
+  width: 3rem;
+  padding: 12.5% 0;
+  border-radius: 3px;
+}
+
+/* song info rules */
+.queue-song-info-container {
+  display: inline-block;
+  padding: 0% 20% 0% 5%; /* 70% */
+}
+
+.queue-song-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0.3rem;
+  color: white;
+}
+
+/* like button rules */
+.like-container {
+  padding: 0 5% 0 0;
+}
+.song-like {
+  padding: 1.5rem 0;
+  color: lightgray;
+}
+
+.song-like:hover {
+  color: red;
+}
+
 /* --------------------------------------------------------------------------------------------------- */
 
 /* music player controls at bottom */
@@ -156,6 +285,8 @@ input[type="text"]::placeholder {
   display: flex;
   justify-content: center;
 }
+
+/* --------------------------------------------------------------------------------------------------- */
 
 /* media queries */
 
