@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Player | Home</title>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
 
     <script
       src="https://kit.fontawesome.com/dda3cf65aa.js"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- nav items -->
-
+    <!-- nav bar -->
     <nav>
       <div class="dropdown-menu text-right">
         <div class="bars">
@@ -40,12 +39,12 @@
       </div>
 
       <ul class="no-list-style horizontal-list nav-menu">
-        <li>
+        <li class="home">
           <a href="#">
             <img src="images/ninja studio.PNG" alt="home-icon" />
           </a>
         </li>
-        <li>
+        <li class="favourites">
           <a href="#"> Favourites </a>
         </li>
         <li class="search">
@@ -72,13 +71,114 @@
     </nav>
 
     <main>
-      <!-- -------------------------------------------------------------------------------- -->
-
-      <!-- main song playlist section -->
-
       <div class="main-container">
         <!-- main songlists container -->
-        <div class="song-list-container"></div>
+        <div class="song-list-container">
+          <div class="new-release-container">
+            <img
+              src="images/song-images/new-releases.PNG"
+              alt="new-releases"
+              id="latest-release-1"
+            />
+            <img
+              src="images/song-images/new-releases.PNG"
+              alt="new-releases"
+              id="latest-release-2"
+            />
+            <img
+              src="images/song-images/new-releases.PNG"
+              alt="new-releases"
+              id="latest-release-3"
+            />
+          </div>
+          <div class="latest-container">
+            <h2 class="section-headers">Latest Release</h2>
+            <!-- latest song rows -->
+            <div class="latest-song-container">
+              <div class="latest-song-name">
+                <img
+                  src="images/song-images/onism.png"
+                  alt="onism"
+                  class="latest-song-image"
+                />
+                <div class="latest-song-info">
+                  <span><b>Onism</b></span>
+                  <span>Aug 11, 2017</span>
+                </div>
+                <div class="latest-song-options">
+                  <span><i class="fa-solid fa-ellipsis"></i></span>
+                  <span class="song-duration">4:44</span>
+                </div>
+              </div>
+              <div class="latest-song-name">
+                <img
+                  src="images/song-images/onism.png"
+                  alt="onism"
+                  class="latest-song-image"
+                />
+                <div class="latest-song-info">
+                  <span><b>Onism</b></span>
+                  <span>Aug 11, 2017</span>
+                </div>
+                <div class="latest-song-options">
+                  <span><i class="fa-solid fa-ellipsis"></i></span>
+                  <span class="song-duration">4:44</span>
+                </div>
+              </div>
+              <div class="latest-song-name">
+                <img
+                  src="images/song-images/onism.png"
+                  alt="onism"
+                  class="latest-song-image"
+                />
+                <div class="latest-song-info">
+                  <span><b>Onism</b></span>
+                  <span>Aug 11, 2017</span>
+                </div>
+                <div class="latest-song-options">
+                  <span><i class="fa-solid fa-ellipsis"></i></span>
+                  <span class="song-duration">4:44</span>
+                </div>
+              </div>
+              <div class="latest-song-name">
+                <img
+                  src="images/song-images/onism.png"
+                  alt="onism"
+                  class="latest-song-image"
+                />
+                <div class="latest-song-info">
+                  <span><b>Onism</b></span>
+                  <span>Aug 11, 2017</span>
+                </div>
+                <div class="latest-song-options">
+                  <span><i class="fa-solid fa-ellipsis"></i></span>
+                  <span class="song-duration">4:44</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular-artist-container">
+            <h2 class="section-headers">Popular Artists</h2>
+            <div class="popular-artists">
+              <figure>
+                <img src="" alt="" />
+                <figcaption>Ed Sheeran</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="genre-container">
+            <!--  -->
+          </div>
+          <div class="genre-container-2">
+            <!--  -->
+          </div>
+          <div class="latest-english-container">
+            <h2 class="section-headers">Latest English</h2>
+          </div>
+          <div class="latest-english-container">
+            <h2 class="section-headers">Latest Hindi</h2>
+          </div>
+        </div>
         <!-- queue items -->
         <div class="queue-container">
           <div class="queue-header">
@@ -325,8 +425,6 @@
           </div>
         </div>
       </div>
-
-      <!-- -------------------------------------------------------------------------------- -->
 
       <!-- player controls -->
       <div class="music-player-options">
