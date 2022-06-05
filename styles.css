@@ -258,7 +258,7 @@ img.queue-song-banner {
 .song-list-container {
   height: inherit;
   width: 75vw;
-  /* background-color: aquamarine; */
+  margin-bottom: 100px;
 }
 
 .new-release-container {
@@ -339,7 +339,56 @@ img.queue-song-banner {
 }
 /* -------------------------------------------------------------------------------------- */
 /* popular artists */
+.popular-artist-container {
+  display: flex;
+  flex-direction: column;
+}
+.popular-artists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+}
+figure img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.hover-fade img:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  opacity: 40%;
+}
+figcaption {
+  color: whitesmoke;
+}
+/* ------------------------------------------------- */
 
+/*  genre properties */
+
+/* latest english and hindi container */
+.latest-english-container {
+  display: flex;
+  flex-direction: column;
+}
+.latest-english-songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.latest-english-songs img {
+  border-radius: 3px;
+}
+.latest-english-info div {
+  font-size: small;
+  text-align: start;
+}
 /* ---------------------------------------------------------------------- */
 
 /* music player controls at bottom */
@@ -365,6 +414,12 @@ img.queue-song-banner {
   justify-content: center;
 }
 /* ---------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* playlist.html CSS properties */
+
+/* ---------------------------------------------------------------------- */
+
 /* media queries */
 
 @media screen and (max-width: 600px) {
