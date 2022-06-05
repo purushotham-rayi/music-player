@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed Sheeran | Songs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/dda3cf65aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <div class="dropdown-menu text-right">
+        <div class="bars">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="dropdown-list nav-menu">
+          <ul class="no-list-style dropdown-only">
+            <li>
+              <a href="#"> Favourites </a>
+            </li>
+            <li>
+              <a href="#"> Search </a>
+            </li>
+            <li>
+              <a href="#">Notications</a>
+            </li>
+            <li>
+              <a href="#">Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="no-list-style horizontal-list nav-menu">
+        <li class="home">
+          <a href="#">
+            <img src="images/ninja studio.PNG" alt="home-icon" />
+          </a>
+        </li>
+        <li class="favourites">
+          <a href="#"> Favourites </a>
+        </li>
+        <li class="search">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <i class="fa-solid fa-microphone mic-icon"></i>
+          </div>
+        </li>
+        <li class="notification">
+          <a href="#">
+            <div class="notification-container">
+              <span><i class="fa-solid fa-bell fa-xl"></i></span>
+              <span class="notification-dot"></span>
+            </div>
+          </a>
+        </li>
+        <li class="account">
+          <a href="#">
+            <img src="images/human-avatar.jpg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- other info -->
+
+    <!-- player controls -->
+    <div class="music-player-options">
+      <div class="song-info">
+        <p>song-info</p>
+      </div>
+      <div id="controls">
+        <audio controls id="controls">
+          <source src="audio/love_again.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      <div class="extra-features">
+        <p>extra-features</p>
+      </div>
+    </div>
+  </body>
+</html>
